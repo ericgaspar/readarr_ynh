@@ -1,5 +1,5 @@
 [Unit]
-Description=Small description of the service
+Description=Radarr Daemon
 After=network.target
 
 [Service]
@@ -7,9 +7,10 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
+ExecStart=__INSTALL_DIR__/Radarr -nobrowser -data=__DATA_DIR__
+TimeoutStopSec=20
+KillMode=process
+Restart=on-failure
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
