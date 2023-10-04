@@ -9,14 +9,13 @@ description.fr = "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce
 
 version = "0.3.6.2232~ynh1"
 
-maintainers = ["johndoe"]
+maintainers = ["eric_G"]
 
 [upstream]
 license = "GPL-3.0"
 website = "https://example.com"
 demo = "https://demo.example.com"
 admindoc = "https://wiki.servarr.com/readarr/installation/linux"
-
 code = "https://github.com/Readarr/Readarr"
 
 [integration]
